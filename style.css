@@ -1,0 +1,72 @@
+body {
+    background-image: url(BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#content-2
+{
+   position: absolute;
+   width: 400px;
+   height: 240px;
+   top: 100px; 
+   left: 150px; 
+   bottom: 20px; 
+   right: 40px;
+}
+
+#content-3
+{
+   position: relative;
+   width: 400px;
+   height: 400px;
+   top: 100px; 
+   left: 300px; 
+   bottom: 20px; 
+   right: 300px;
+}
+
+p.F_class {
+    font-family: cursive;
+    color: rgb(0, 128, 38);
+}
+
+
+div#Ident {
+    background-color: rgb(68, 151, 184);
+}
+
+.tabs {
+    font-size: 0;
+}
+
+.tabs>input[type="radio"] {
+    display: none;
+}
+
+.tabs>div {
+    display: none;
+    text-align: center;
+    padding: 50px 75px;
+    font-size: 16px;
+    width: 300px;
+}
+
+#tab-btn-1:checked~#content-1, #tab-btn-2:checked~#content-2, #tab-btn-3:checked~#content-3 {
+    display: block;
+}
+
+.tabs>label {
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tabs>input[type="radio"]:checked+label {
+    background-color: rgb(41, 41, 41);
+    color: aliceblue;
+}
